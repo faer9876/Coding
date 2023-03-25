@@ -38,12 +38,12 @@
 
       public static void insertStationList(int insIdx, String isName, int prevIdx){
         list[insIdx].name=isName;
-        list[insIdx].next=list[prevIdx].next;
-        list[prevIdx].next=insIdx;
+        list[insIdx].next=list[prevIdx].next; //여기서 삽입할 인덱스의 넥스트를 전에 값의 넥스트로 바꾸고
+        list[prevIdx].next=insIdx;//전 값의 넥스트를 삽입하는 인덱스의 값으로 바꿈
       }
 
       public static void deleteStationList(int delIdx,int prevIdx){
-        list[prevIdx].next=list[delIdx].next;
+        list[prevIdx].next=list[delIdx].next; //현재의 인덱스를 삭제할 값의 인덱스로 변경 원래대로 돌아감
       }
       public static void main(String[] args){
         initStationList();
