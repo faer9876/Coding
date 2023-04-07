@@ -59,9 +59,10 @@ class fSortT{
 		}
 
 		int max = x[0];
-		for (int i = 1; i < nx; i++)
-			if (x[i] > max)
-				max = x[i];
+    for(int i=0;i<nx;i++){
+      if(max<x[i])
+      max=x[i];
+    }
 
 		fSort(x, nx, max); // 배열 x를 도수정렬
 
