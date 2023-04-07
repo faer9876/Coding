@@ -1,6 +1,6 @@
 import java.util.*;;
 public class e_pt8 {
-  public static int[] hashTable={-1, -1, -1, -1, -1, -1, -1, -1, -1}
+  public static int[] hashTable={-1, -1, -1, -1, -1, -1, -1, -1, -1};
 
   public static int hashFunc(int data){
     return data%10;
